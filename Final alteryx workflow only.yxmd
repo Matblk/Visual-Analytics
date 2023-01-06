@@ -1,0 +1,1217 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2022.1">
+  <Nodes>
+    <Node ToolID="123">
+      <GuiSettings>
+        <Position x="355" y="367" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">""</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro=".\_externals\1\Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings>
+        <Position x="355" y="487" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"Categories: "</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">False</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro=".\_externals\1\Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="582" y="54" width="649" height="297" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Translations and grouping</Caption>
+          <Style TextColor="#314c4a" FillColor="#ffe2d5" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="68">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+            <Position x="1147" y="187" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldFind>categories</FieldFind>
+              <FieldSearch><![CDATA[Branch: ]]></FieldSearch>
+              <ReplaceFoundField><![CDATA[Categories: ]]></ReplaceFoundField>
+              <FindMode>FindAny</FindMode>
+              <NoCase value="False" />
+              <MatchWholeWord value="False" />
+              <ReplaceMode>Replace</ReplaceMode>
+              <ReplaceMultipleFound value="True" />
+              <ReplaceAppendFields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+        </Node>
+        <Node ToolID="122">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="1051" y="103" width="143" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Comments:</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="121">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1075" y="151" width="288" height="264" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text><![CDATA[Translations: 
+
+1. Using dynamic rename to change column names. The dataset, in the input, which is used, contains columns translating every column name. 
+
+2. Translating the english branch names with the find & replace function. Here, the find & replace function is used to locate and replace every danish branch name with the excel input, which contains the danish branch names from the original dataset and the related translations. 
+
+3. Using the formula tool to i) translate the company type and ii) create a new column "categories" copying the branch column 
+
+4. Using the find & replace function to append the a over-category to each observation. Here, the formula tool is used to create the branch names. The input contains the over-categories which is paired with the branch names. Then the find & replace is used to append the proper overcategory to each brand name. ]]></Text>
+                  <Font name="Arial" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor name="White" />
+                  <Shape shape="0" />
+                  <Justification Justification="0" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+            <Position x="835" y="175" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldFind>branch</FieldFind>
+              <FieldSearch>Danish</FieldSearch>
+              <ReplaceFoundField>English</ReplaceFoundField>
+              <FindMode>FindAny</FindMode>
+              <NoCase value="False" />
+              <MatchWholeWord value="True" />
+              <ReplaceMode>Replace</ReplaceMode>
+              <ReplaceMultipleFound value="True" />
+              <ReplaceAppendFields />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="967" y="175" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="if [company_type] = &quot;Detail&quot; then &quot;Retail&quot;&#xA;else &quot;Wholesale&quot;&#xA;ENDIF" field="company_type" size="255" type="V_String" />
+                <FormulaField expression="[branchCode]" field="categories" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>company_type = if [company_type] = "Detail" then "Retail"
+else "Wholesale"
+ENDIF...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="9">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+            <Position x="607" y="163" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <RenameMode>RightInputMetadata</RenameMode>
+              <Fields orderChanged="False">
+                <Field name="navnelbnr" />
+                <Field name="cvrnr" />
+                <Field name="pnr" />
+                <Field name="brancheKode" />
+                <Field name="branche" />
+                <Field name="virksomhedstype" />
+                <Field name="navn1" />
+                <Field name="adresse1" />
+                <Field name="postnr" />
+                <Field name="By" />
+                <Field name="seneste_kontrol" />
+                <Field name="seneste_kontrol_dato" />
+                <Field name="naestseneste_kontrol" />
+                <Field name="naestseneste_kontrol_dato" />
+                <Field name="tredjeseneste_kontrol" />
+                <Field name="tredjeseneste_kontrol_dato" />
+                <Field name="fjerdeseneste_kontrol" />
+                <Field name="fjerdeseneste_kontrol_dato" />
+                <Field name="URL" />
+                <Field name="reklame_beskyttelse" />
+                <Field name="Elite_Smiley" />
+                <Field name="Geo_Lng" />
+                <Field name="Geo_Lat" />
+                <Field name="*Unknown" />
+              </Fields>
+              <Expression />
+              <NamesFromMetadata>
+                <OnError>Warn</OnError>
+                <ChangeFields>False</ChangeFields>
+              </NamesFromMetadata>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="navnelbnr" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="cvr_number" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="pnr" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="branchCode" size="255" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="branch" size="255" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="company_type" size="255" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="name1" size="255" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="V_WString" />
+                <Field name="adress1" size="255" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="V_WString" />
+                <Field name="postcode" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="City" size="255" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="most_recent_control" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="most_recent_control_date" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Date" />
+                <Field name="second_last_control" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="second_last_control_date" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Date" />
+                <Field name="third_last_control" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="third_last_control_date" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Date" />
+                <Field name="fourth_last_control" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="fourth_last_control_date" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Date" />
+                <Field name="URL" size="255" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="advertising_protection" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Elite_Smiley" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Geo_Lng" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Geo_Lat" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="97">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="2274" y="162" width="500" height="206" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Creating the average rating for each company, by joining summary statistics</Caption>
+          <Style TextColor="#314c4a" FillColor="#ffc488" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="111">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="2575" y="211" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="False">
+              <JoinInfo connection="Left">
+                <Field field="navnelbnr" />
+              </JoinInfo>
+              <JoinInfo connection="Right">
+                <Field field="navnelbnr" />
+              </JoinInfo>
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="Right_navnelbnr" selected="False" rename="Right_navnelbnr" input="Right_" />
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="109">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="2407" y="259" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="108">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+            <Position x="2299" y="259" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ErrorWarn>Warn</ErrorWarn>
+              <KeyFields>
+                <Field field="navnelbnr" />
+              </KeyFields>
+              <DataFields>
+                <Field field="navnelbnr" selected="False" />
+                <Field field="cvr_number" selected="False" />
+                <Field field="pnr" selected="False" />
+                <Field field="branchCode" selected="False" />
+                <Field field="branch" selected="False" />
+                <Field field="categories" selected="False" />
+                <Field field="company_type" selected="False" />
+                <Field field="name1" selected="False" />
+                <Field field="adress1" selected="False" />
+                <Field field="postcode" selected="False" />
+                <Field field="City" selected="False" />
+                <Field field="most_recent_control" selected="True" />
+                <Field field="most_recent_control_date" selected="False" />
+                <Field field="second_last_control" selected="True" />
+                <Field field="second_last_control_date" selected="False" />
+                <Field field="third_last_control" selected="True" />
+                <Field field="third_last_control_date" selected="False" />
+                <Field field="fourth_last_control" selected="True" />
+                <Field field="fourth_last_control_date" selected="False" />
+                <Field field="URL" selected="False" />
+                <Field field="URL_ID" selected="False" />
+                <Field field="advertising_protection" selected="False" />
+                <Field field="Elite_Smiley" selected="False" />
+                <Field field="Latitude" selected="False" />
+                <Field field="Longitude" selected="False" />
+                <Field field="region" selected="False" />
+                <Field field="copenhagen_district" selected="False" />
+                <Field field="*Unknown" selected="False" />
+              </DataFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+        </Node>
+        <Node ToolID="107">
+          <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+            <Position x="2491" y="259" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <SummarizeFields>
+                <SummarizeField field="navnelbnr" action="GroupBy" rename="navnelbnr" />
+                <SummarizeField field="Value" action="AvgNo0" rename="AvgNo0_Value" />
+              </SummarizeFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+        </Node>
+        <Node ToolID="129">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="2599" y="319" width="143" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Comments:</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="128">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="2623" y="367" width="492" height="240" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text><![CDATA[Creating the average rating for each company 
+
+1. transposing the data
+2. selecting only the neccessary columns, to avoid unneccessary joining several columns
+3. calculating the average with the summary tool, ignoring null values
+4. creating record id's 
+
+Regarding the approach: 
+We needed a average with values in different rows. There is a multirow tool. However this tool does not give access to the average, while ignoring null or zero values. The summary tool however does have a avg while ignoring zeros, which can be used to ignore the null values. The summarize function only work on columns, hence the usage of the transpose tool beforehand. The select tool is used, since we are joining the data with a j-join, why there's a need to deselect the fields with no usage.  ]]></Text>
+                  <Font name="Arial" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor name="White" />
+                  <Shape shape="0" />
+                  <Justification Justification="0" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="149">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+            <Position x="2683" y="211" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FieldName>RecordID</FieldName>
+              <StartValue>1</StartValue>
+              <FieldType>Int32</FieldType>
+              <FieldSize>6</FieldSize>
+              <Position>0</Position>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="153">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="2874" y="162" width="265" height="195" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Output, modified dataset</Caption>
+          <Style TextColor="#314c4a" FillColor="#04ff43" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="151">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+            <Position x="2899" y="211" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <File MaxRecords="" FileFormat="25">_externals\1\cleaned_and_modified_dataset_final.xlsx|||Sheet2</File>
+              <Passwords />
+              <Disable>False</Disable>
+              <FormatSpecificOptions>
+                <PreserveFormat>False</PreserveFormat>
+                <SkipFieldNames>False</SkipFieldNames>
+                <OutputOption>Create</OutputOption>
+              </FormatSpecificOptions>
+              <MultiFile value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>cleaned_and_modified_dataset_final.xlsx
+Query=Sheet2</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+        </Node>
+        <Node ToolID="250">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="2971" y="223" width="143" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Comments:</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="249">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="2995" y="271" width="120" height="24" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text>Output of ETL dataset</Text>
+                  <Font name="Arial" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor name="White" />
+                  <Shape shape="0" />
+                  <Justification Justification="0" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="124">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1854" y="150" width="301" height="240" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Creating 'region' &amp; copenhagen_district</Caption>
+          <Style TextColor="#314c4a" FillColor="#0080ff" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="102">
+          <GuiSettings>
+            <Position x="2059" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Value name="Check Box (135)">False</Value>
+              <Value name="Check Box (136)">False</Value>
+              <Value name="List Box (11)">""</Value>
+              <Value name="Check Box (84)">False</Value>
+              <Value name="Check Box (117)">True</Value>
+              <Value name="Check Box (15)">True</Value>
+              <Value name="Check Box (109)">False</Value>
+              <Value name="Check Box (122)">False</Value>
+              <Value name="Check Box (53)">False</Value>
+              <Value name="Check Box (58)">False</Value>
+              <Value name="Check Box (70)">False</Value>
+              <Value name="Check Box (77)">False</Value>
+              <Value name="Drop Down (81)">upper</Value>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings Macro=".\_externals\1\Cleanse.yxmc" />
+        </Node>
+        <Node ToolID="92">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1879" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="([postcode])" field="region" size="1073741823" type="V_WString" />
+                <FormulaField expression="if tonumber([region]) &gt;=  1000 and  tonumber([region]) &lt;= 4000  tHEN &quot;Capital Region&quot; &#xA;Elseif tonumber([region]) &gt;=  4001 and  tonumber([region]) &lt;= 4999  tHEN &quot;Region Zealand&quot; &#xA;Elseif tonumber([region]) &gt;= 5000 and  tonumber([region]) &lt;= 7323 THEN &quot;Region South Denmark&quot;&#xA;Elseif tonumber([region]) &gt;= 7324 and  tonumber([region]) &lt;= 8990 THEN &quot;Region Central Denmark&quot;  &#xA;ELSE &quot;Region North Denmark&quot; &#xA;endif " field="region" size="1073741823" type="V_WString" />
+                <FormulaField expression="[postcode]" field="copenhagen_district" size="1073741823" type="V_WString" />
+                <FormulaField expression="if tonumber([copenhagen_district]) &gt;=  1000 and  tonumber([copenhagen_district]) &lt;= 1549  tHEN &quot;Copenhagen C&quot; &#xA;Elseif tonumber([copenhagen_district]) &gt;=  1550 and  tonumber([copenhagen_district]) &lt;= 1799  tHEN &quot;Copenhagen V&quot;&#xA;Elseif tonumber([copenhagen_district]) &gt;=  1800 and  tonumber([copenhagen_district]) &lt;= 1928  tHEN &quot;Frederiksberg C&quot; &#xA;Elseif tonumber([copenhagen_district]) =  2100 then &quot;Copenhagen E&quot; &#xA;Elseif tonumber([copenhagen_district]) =  2150 then &quot;North Harbour&quot; &#xA;Elseif tonumber([copenhagen_district]) =  2200 then &quot;Copenhagen N&quot; &#xA;Elseif tonumber([copenhagen_district]) =  2300 then &quot;Copenhagen S&quot; Elseif tonumber([copenhagen_district]) =  2400 then &quot;Copenhagen NW&quot; Elseif tonumber([copenhagen_district]) =  2450 then &quot;Copenhagen SW&quot; Elseif tonumber([copenhagen_district]) =  2500 then &quot;Valby&quot; &#xA;Elseif tonumber([copenhagen_district]) =  2700 then &quot;Bronshoj&quot; Elseif tonumber([copenhagen_district]) =  2720 then &quot;Vanlose&quot;&#xA;ELSE Null()  endif " field="copenhagen_district" size="1073741823" type="V_WString" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>region = ([postcode])
+region = if tonumber([region]) &gt;=  1000 and  tonumber([reg...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="126">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="1987" y="319" width="143" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Comments:</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="True" />
+              <Folded value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="125">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="2011" y="367" width="382" height="227" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text><![CDATA[Creating 'region' & 'copenhagen_district' 
+- Using the formula tool to create new columns which contains information about the region & district in copenhagen (if the observation is in copenhagen) 
+
+1. 4 formulas is inside the formula tool; i) create region, which is equal to the postcode ii) using a if statement to delegate the postcodes in region to regions iii) create copenhagen district by copying the postnumbers iv) delegating the district in copenhagen by if elif statements 
+2. deleting trailing whitespaces 
+
+Regarding the formula tool:  
+ the function to_number is used in the formula tool. This is due to the fact that we changed postcodes, a integer, into regions, a string. To do this operation, the function is needed, since the input in the value changes its variable. ]]></Text>
+                  <Font name="Arial" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor name="White" />
+                  <Shape shape="0" />
+                  <Justification Justification="0" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="209">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1386" y="138" width="409" height="195" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Creating URL_ID and joining the geo location</Caption>
+          <Style TextColor="#314c4a" FillColor="#158aff" BorderColor="#000000" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="178">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1411" y="187" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="REGEX_Replace([URL], &quot;(.*)(=)(.*)&quot;, &quot;$3&quot;)" field="URL_ID" size="255" type="V_String" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText><![CDATA[URL_ID = REGEX_Replace([URL], "(.*)(=)(.*)", "$3")
+]]></DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="179">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1531" y="187" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="navnelbnr" selected="True" type="Int64" size="8" />
+                <SelectField field="cvr_number" selected="True" />
+                <SelectField field="pnr" selected="True" />
+                <SelectField field="branchCode" selected="True" />
+                <SelectField field="branch" selected="True" />
+                <SelectField field="categories" selected="True" />
+                <SelectField field="company_type" selected="True" />
+                <SelectField field="name1" selected="True" />
+                <SelectField field="adress1" selected="True" />
+                <SelectField field="postcode" selected="True" />
+                <SelectField field="City" selected="True" />
+                <SelectField field="most_recent_control" selected="True" />
+                <SelectField field="most_recent_control_date" selected="True" />
+                <SelectField field="second_last_control" selected="True" />
+                <SelectField field="second_last_control_date" selected="True" />
+                <SelectField field="third_last_control" selected="True" />
+                <SelectField field="third_last_control_date" selected="True" />
+                <SelectField field="fourth_last_control" selected="True" />
+                <SelectField field="fourth_last_control_date" selected="True" />
+                <SelectField field="URL" selected="True" />
+                <SelectField field="URL_ID" selected="True" />
+                <SelectField field="advertising_protection" selected="True" />
+                <SelectField field="Elite_Smiley" selected="True" />
+                <SelectField field="Geo_Lng" selected="False" />
+                <SelectField field="Geo_Lat" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="185">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+            <Position x="1651" y="199" />
+          </GuiSettings>
+          <Properties>
+            <Configuration joinByRecordPos="True">
+              <SelectConfiguration>
+                <Configuration outputConnection="Join">
+                  <OrderChanged value="False" />
+                  <CommaDecimal value="False" />
+                  <SelectFields>
+                    <SelectField field="*Unknown" selected="True" />
+                  </SelectFields>
+                </Configuration>
+              </SelectConfiguration>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+        </Node>
+        <Node ToolID="212">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="1627" y="283" width="143" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Comments:</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="211">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="1651" y="331" width="370" height="119" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text><![CDATA[Creating the URL_ID and joining the updated Geolocations:
+
+1. extracting the URL_ID from the URL to use the ID in the Dashboard
+2. Deselecting the old Geo Locations 
+3. Joining the new Geolocations ]]></Text>
+                  <Font name="Arial" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor name="White" />
+                  <Shape shape="0" />
+                  <Justification Justification="0" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="242">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="54" y="54" width="216" height="757" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Data Inputs</Caption>
+          <Style TextColor="#314c4a" FillColor="#80ff9f" BorderColor="#000000" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="247" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">translations.xlsx|||`Fields$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>translations.xlsx
+Query=`Fields$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="navnelbnr" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+                <Field name="cvr_number" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+                <Field name="pnr" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+                <Field name="branchCode" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+                <Field name="branch" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+                <Field name="company_type" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+                <Field name="name1" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+                <Field name="adress1" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+                <Field name="postcode" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+                <Field name="City" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+                <Field name="most_recent_control" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+                <Field name="most_recent_control_date" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+                <Field name="second_last_control" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+                <Field name="second_last_control_date" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+                <Field name="third_last_control" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+                <Field name="third_last_control_date" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+                <Field name="fourth_last_control" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+                <Field name="fourth_last_control_date" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+                <Field name="URL" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+                <Field name="advertising_protection" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+                <Field name="Elite_Smiley" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+                <Field name="Geo_Lng" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+                <Field name="Geo_Lat" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\translations.xlsx|||`Fields$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="367" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">translations.xlsx|||`Branch$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>translations.xlsx
+Query=`Branch$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Danish" size="255" source="File: C:\Users\brugerbruger\Desktop\translations.xlsx|||`Branch$`" type="V_String" />
+                <Field name="English" size="255" source="File: C:\Users\brugerbruger\Desktop\translations.xlsx|||`Branch$`" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="73">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="487" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">Categories Grouped .xlsx|||`Branch$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Categories Grouped .xlsx
+Query=`Branch$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Categories: " size="255" source="File: C:\Users\brugerbruger\Desktop\Categories Grouped .xlsx|||`Branch$`" type="V_String" />
+                <Field name="Branch: " size="255" source="File: C:\Users\brugerbruger\Desktop\Categories Grouped .xlsx|||`Branch$`" type="V_String" />
+                <Field name="English: " size="255" source="File: C:\Users\brugerbruger\Desktop\Categories Grouped .xlsx|||`Branch$`" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="184">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="103" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">_externals\1\Smiley_data_original.xlsx|||`Sheet1$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Smiley_data_original.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="navnelbnr" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="cvrnr" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="pnr" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="brancheKode" size="255" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="branche" size="255" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="virksomhedstype" size="255" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="navn1" size="255" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="V_WString" />
+                <Field name="adresse1" size="255" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="V_WString" />
+                <Field name="postnr" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="By" size="255" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="seneste_kontrol" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="seneste_kontrol_dato" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Date" />
+                <Field name="naestseneste_kontrol" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="naestseneste_kontrol_dato" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Date" />
+                <Field name="tredjeseneste_kontrol" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="tredjeseneste_kontrol_dato" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Date" />
+                <Field name="fjerdeseneste_kontrol" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="fjerdeseneste_kontrol_dato" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Date" />
+                <Field name="URL" size="255" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="V_String" />
+                <Field name="reklame_beskyttelse" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Elite_Smiley" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Geo_Lng" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Geo_Lat" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Merged alteryx_works_with_time (1)\_externals\1\Smiley_data_original.xlsx|||`Sheet1$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+        <Node ToolID="246">
+          <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+            <Position x="102" y="762" width="143" height="24" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Caption>Comments:</Caption>
+              <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+              <Disabled value="False" />
+              <Folded value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <ChildNodes>
+            <Node ToolID="245">
+              <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+                <Position x="127" y="811" width="288" height="228" />
+              </GuiSettings>
+              <Properties>
+                <Configuration>
+                  <Text><![CDATA[5 inputs: 
+
+1. The smiley data, being the primary dataset utilized 
+2. Since the dataset is in danish translations of the rows and columns are added 
+3. The company types, or branches, is translated and added as well 
+4. Since the dataset contained 77 different categories, these were grouped into nine over-categories 
+5. The geolocation are scraped via the geocoding API accessed via a python script ]]></Text>
+                  <Font name="Arial" size="8.25" style="0" />
+                  <TextColor name="Black" />
+                  <FillColor name="White" />
+                  <Shape shape="0" />
+                  <Justification Justification="0" />
+                </Configuration>
+                <Annotation DisplayMode="0">
+                  <Name />
+                  <DefaultAnnotationText />
+                  <Left value="False" />
+                </Annotation>
+              </Properties>
+            </Node>
+          </ChildNodes>
+        </Node>
+        <Node ToolID="182">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+            <Position x="79" y="643" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" RecordLimit="" SearchSubDirs="False" FileFormat="25">Geolocation.xlsx|||`Sheet1$`</File>
+              <FormatSpecificOptions>
+                <FirstRowData>False</FirstRowData>
+                <ImportLine>1</ImportLine>
+              </FormatSpecificOptions>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>Geolocation.xlsx
+Query=`Sheet1$`</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="Latitude" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\Geolocation.xlsx|||`Sheet1$`" type="Double" />
+                <Field name="Longitude" source="File: C:\Users\davpi\OneDrive\Desktop\Education\4 Università magistrale\CBS\CBS Corsi\1 - Visual Analytics\Exam\Additional changes\Merged alteryx_Autosave\Geolocation.xlsx|||`Sheet1$`" type="Double" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="123" Connection="Output26" />
+      <Destination ToolID="4" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="4" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="57" Connection="Output26" />
+      <Destination ToolID="68" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="68" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="178" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="111" Connection="Join" />
+      <Destination ToolID="149" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="109" Connection="Output" />
+      <Destination ToolID="107" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="108" Connection="Output" />
+      <Destination ToolID="109" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="107" Connection="Output" />
+      <Destination ToolID="111" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="102" Connection="Output26" />
+      <Destination ToolID="111" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="149" Connection="Output" />
+      <Destination ToolID="151" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="102" Connection="Output26" />
+      <Destination ToolID="108" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="92" Connection="Output" />
+      <Destination ToolID="102" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="178" Connection="Output" />
+      <Destination ToolID="179" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="179" Connection="Output" />
+      <Destination ToolID="185" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="182" Connection="Output" />
+      <Destination ToolID="185" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="185" Connection="Join" />
+      <Destination ToolID="92" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="9" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="184" Connection="Output" />
+      <Destination ToolID="9" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="123" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="57" Connection="Input2" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <PredictiveToolsCodePage value="1252" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Final alteryx workflow only</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="a5457f90-805c-4620-949f-fdc3dba58e27" />
+      <Telemetry>
+        <PreviousWorkflowId value="b8b595b5-e39a-420e-8e11-5cb1ed58c882" />
+        <OriginWorkflowId value="03fa1526-85e2-4d07-ae72-9d55f7621267" />
+      </Telemetry>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
